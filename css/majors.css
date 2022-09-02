@@ -1,0 +1,12 @@
+.link-disable{
+	cursor: default;
+	text-decoration: none;
+	color: gray;
+}
+.link-disable:hover{
+	color: darkgray;
+}
+
+.link-bring-to-front{
+	
+}
