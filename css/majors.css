@@ -6,7 +6,14 @@
 .link-disable:hover{
 	color: darkgray;
 }
-
-.link-bring-to-front{
-	
+.link-disable:visited{
+	color: darkgray;
+}
+.image-opacity{
+	width: 400;
+	height: 300;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.image-opacity:hover{
+	background-color: rgba(0, 0, 0, 0.2);
 }
