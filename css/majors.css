@@ -9,12 +9,12 @@
 .link-disable:visited{
 	color: darkgray;
 }
-.image-opacity{
+.card-image-bg-modifiation{
 	width: 400;
 	height: 300;
 	background-color: rgba(0, 0, 0, 0.8);
 }
-.image-opacity:hover{
+.card-image-bg-modifiation:hover{
 	background-color: rgba(0, 0, 0, 0.2);
 }
 .cardstyle{
