@@ -9,14 +9,46 @@
 .link-disable:visited{
 	color: darkgray;
 }
-.card-image-bg-modifiation{
-	width: 400;
-	height: 300;
-	background-color: rgba(0, 0, 0, 0.8);
+.cardopacity{
+	background-color: rgba(0, 0, 0, 0);
 }
-.card-image-bg-modifiation:hover{
-	background-color: rgba(0, 0, 0, 0.2);
+.cardopacity:hover{
+	background-color: rgba(0, 0, 0, 1);
 }
-.cardstyle{
-	width: 20rem;
+#Interests{
+	perspective: 1400px;/* for making 3D more attractive */
+}
+.container .card{
+	width: 15rem;
+	height: 25rem;
+	transition: transform 0.8s;
+	-o-transition: transform 0.8s;
+	-webkit-transition: transform 0.8s;
+	-moz-transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+.container .card:hover, .cardback{
+	transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+}
+.container .card .card-img{
+	opacity: 0.2;
+}
+.cardfront, .cardback{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+}
+.container .card .card-img-overlay{
+	display: flex;
+	flex-direction: row; 	
+	flex-wrap: wrap;        	
+	justify-content: center;	
+	align-items: center;
 }
