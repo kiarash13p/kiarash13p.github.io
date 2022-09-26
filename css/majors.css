@@ -36,6 +36,9 @@
 }
 .container .card .card-img{
 	opacity: 0.2;
+	position: absolute;
+	width: inherit;
+	height: inherit;
 }
 .cardfront, .cardback{
 	position: absolute;
