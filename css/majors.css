@@ -3,6 +3,11 @@
 	text-decoration: none;
 	color: gray;
 }
+.link-disable img {
+	width: 24px;
+	height: 24px;
+	display: inline;
+}
 .link-disable:hover{
 	color: darkgray;
 }
@@ -18,7 +23,7 @@
 #Interests{
 	perspective: 1400px;/* for making 3D more attractive */
 }
-.container .card{
+#Interests .card{
 	width: 15rem;
 	height: 25rem;
 	transition: transform 0.8s;
@@ -27,14 +32,14 @@
 	-moz-transition: transform 0.8s;
 	transform-style: preserve-3d;
 }
-.container .card:hover, .cardback{
+#Interests .card:hover, .cardback{
 	transform: rotateY(180deg);
 	-ms-transform: rotateY(180deg);
 	-webkit-transform: rotateY(180deg);
 	-moz-transform: rotateY(180deg);
 	-o-transform: rotateY(180deg);
 }
-.container .card .card-img{
+#Interests .card .card-img{
 	opacity: 0.2;
 	position: absolute;
 	width: inherit;
@@ -48,11 +53,22 @@
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 }
-.container .card .card-img-overlay{
+#Interests .card .card-img-overlay{
 	display: flex;
 	flex-direction: row; 	
 	flex-wrap: wrap;        	
 	justify-content: center;	
 	align-items: center;
 }
+#ProjectCoordinator
+{
+	transition-property: all;
+    transition-duration: 400ms;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+#ProjectCoordinator:hover
+{
+	transform: scale(1.02);
 
+}
