@@ -60,14 +60,14 @@
 	justify-content: center;	
 	align-items: center;
 }
-#ProjectCoordinator
+#ProjectCoordinator,#RDSpecialist
 {
 	transition-property: all;
     transition-duration: 400ms;
     transition-timing-function: ease;
     transition-delay: 0s;
 }
-#ProjectCoordinator:hover
+#ProjectCoordinator:hover,#RDSpecialist:hover
 {
 	transform: scale(1.02);
 
