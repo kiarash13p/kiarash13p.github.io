@@ -31,6 +31,7 @@
 	-webkit-transition: transform 0.8s;
 	-moz-transition: transform 0.8s;
 	transform-style: preserve-3d;
+	user-select: none;
 }
 #Interests .card:hover, .cardback{
 	transform: rotateY(180deg);
@@ -60,15 +61,24 @@
 	justify-content: center;	
 	align-items: center;
 }
-#ProjectCoordinator,#RDSpecialist
+#ProjectCoordinator,#RDSpecialist,#TeachingAssistant
 {
 	transition-property: all;
     transition-duration: 400ms;
     transition-timing-function: ease;
     transition-delay: 0s;
+    user-select: none;
 }
-#ProjectCoordinator:hover,#RDSpecialist:hover
+#ProjectCoordinator:hover,#RDSpecialist:hover,#TeachingAssistant:hover
 {
 	transform: scale(1.02);
-
+}
+#Bars
+{
+	padding-bottom: 0.2rem;
+	justify-content: center;
+}
+#Names
+{
+	
 }
