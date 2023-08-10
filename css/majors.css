@@ -61,7 +61,7 @@
 	justify-content: center;	
 	align-items: center;
 }
-#ProjectCoordinator,#RDSpecialist,#TeachingAssistant,#Bachelor,#Master,#Publication
+#EducationalAssistant,#ProjectCoordinator,#RDSpecialist,#TeachingAssistant,#Bachelor,#Master,#Publication,#Bio
 {
 	transition-property: all;
     transition-duration: 400ms;
@@ -69,7 +69,7 @@
     transition-delay: 0s;
     user-select: none;
 }
-#ProjectCoordinator:hover,#RDSpecialist:hover,#TeachingAssistant:hover,#Bachelor:hover,#Master:hover,#Publication:hover
+#EducationalAssistant:hover,#ProjectCoordinator:hover,#RDSpecialist:hover,#TeachingAssistant:hover,#Bachelor:hover,#Master:hover,#Publication:hover,#Bio:hover
 {
 	transform: scale(1.02);
 }
@@ -81,4 +81,32 @@
 #Name
 {
 	user-select: none;
+}
+
+.ImageBox{
+	overflow: hidden;
+	position: relative;
+	height: 40%;
+	/* width: auto; */
+}
+/* #EducationalAssistant .ImageBox{
+	right: 13px;
+} */
+#TUDelftImage{
+	transform: rotate(5deg) scale(1.2);
+	overflow: visible;
+}
+
+#SBRImage{
+	transform: rotate(10deg) scale(1.1);
+	overflow: visible;
+}
+
+#UTImage{
+	transform: rotate(-10deg) scale(0.9);
+	overflow: visible;
+}
+.masker{
+	mask-image: linear-gradient( black , transparent );
+	-webkit-mask-image: linear-gradient( black , transparent );
 }
