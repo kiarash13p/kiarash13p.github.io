@@ -73,18 +73,18 @@
 {
 	transform: scale(1.02);
 }
-#Bars
+#StarContainers
 {
 	padding-bottom: 0.2rem;
-	justify-content: center;
+	justify-content: space-around;
 }
 #Name
 {
 	user-select: none;
+	vertical-align: middle;
 }
 
 .ImageBox{
-	overflow: hidden;
 	position: relative;
 	height: 40%;
 	/* width: auto; */
@@ -109,4 +109,36 @@
 .masker{
 	mask-image: linear-gradient( black , transparent );
 	-webkit-mask-image: linear-gradient( black , transparent );
+}
+
+.starholder{
+	width: 20px;
+	height: 20px;
+	margin: auto;
+	display: block;
+}
+
+.star-0{
+	content: url('../images/star-0.svg');
+	margin: auto;
+}
+
+.star-25{
+	content: url('../images/star-25.svg');
+	margin: auto;
+}
+
+.star-50{
+	content: url('../images/star-50.svg');
+	margin: auto;
+}
+
+.star-75{
+	content: url('../images/star-75.svg');
+	margin: auto;
+}
+
+.star-100{
+	content: url('../images/star-100.svg');
+	margin: auto;
 }
