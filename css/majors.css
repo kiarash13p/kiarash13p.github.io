@@ -83,7 +83,10 @@
 	user-select: none;
 	vertical-align: middle;
 }
-
+#Skill
+{
+	
+}
 .ImageBox{
 	position: relative;
 	height: 40%;
@@ -111,12 +114,6 @@
 	-webkit-mask-image: linear-gradient( black , transparent );
 }
 
-.starholder{
-	width: 20px;
-	height: 20px;
-	margin: auto;
-	display: block;
-}
 
 .star-0{
 	content: url('../images/star-0.svg');
