@@ -20,6 +20,10 @@
 .cardopacity:hover{
 	background-color: rgba(0, 0, 0, 1);
 }
+
+#Quote{
+	user-select: none;
+}
 #Bio{
 	text-align: justify;
     /* display: flex; Apply Flexbox layout */
@@ -35,6 +39,7 @@
 
 .bio-text {
     flex: 1; /* Allow the text to fill the remaining space */
+	
 }
 
 .blockquote-custom-icon {
@@ -54,47 +59,75 @@
 	font-size: 1.2rem;
 }
 #Interests{
-	perspective: 1400px;/* for making 3D more attractive */
+	padding: auto;
 }
-#Interests .card{
-	width: 15rem;
-	height: 25rem;
-	transition: transform 0.8s;
-	-o-transition: transform 0.8s;
-	-webkit-transition: transform 0.8s;
-	-moz-transition: transform 0.8s;
-	transform-style: preserve-3d;
+
+#Interests .card {	
+	-webkit-user-select: none;
+	-moz-user-select: none;
 	user-select: none;
+	justify-content: center;
+	position: relative;
+	
 }
-#Interests .card:hover, .cardback{
-	transform: rotateY(180deg);
-	-ms-transform: rotateY(180deg);
-	-webkit-transform: rotateY(180deg);
-	-moz-transform: rotateY(180deg);
-	-o-transform: rotateY(180deg);
-}
-#Interests .card .card-img{
-	opacity: 0.2;
+
+#Interests .card h4 {
 	position: absolute;
-	width: inherit;
-	height: inherit;
-}
-.cardfront, .cardback{
-	position: absolute;
+
+	left: 0%;
 	width: 100%;
-	height: 100%;
-	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
+	height: auto;
 }
-#Interests .card .card-img-overlay{
-	display: flex;
-	flex-direction: row; 	
-	flex-wrap: wrap;        	
-	justify-content: center;	
-	align-items: center;
+.cardfront {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;	
+
 }
-#EducationalAssistant,#ProjectCoordinator,#RDSpecialist,#TeachingAssistant,#Bachelor,#Master,#Publication,#Bio
+
+.cardfront img {
+	/* bring the image to center */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+    width: 100%; /* Ensure the image covers the card width */
+    height: auto; /* Maintain aspect ratio */
+    transition: .7s ease;
+	opacity: 0.1;
+}
+
+.cardback {
+	opacity: 0;
+	background-color: #ffffff;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	transition: .7s ease;
+	
+}
+
+
+#Interests .card:hover .cardback {
+	opacity: 1; /* Make cardback visible on hover */
+}
+
+#Interests .card:hover .cardfront {
+	opacity: 0; /* Make cardback visible on hover */
+}
+
+#Interests .card:hover h4 {
+	opacity: 0; /* Make cardback visible on hover */
+}
+
+
+
+#Interests .card .carddesc{
+	display: block;
+}
+
+#EducationalAssistant,#ProjectCoordinator,#RDSpecialist,#TeachingAssistant,#Bachelor,#Master,#Publication
 {
 	transition-property: all;
     transition-duration: 400ms;
@@ -102,7 +135,7 @@
     transition-delay: 0s;
     user-select: none;
 }
-#EducationalAssistant:hover,#ProjectCoordinator:hover,#RDSpecialist:hover,#TeachingAssistant:hover,#Bachelor:hover,#Master:hover,#Publication:hover,#Bio:hover
+#EducationalAssistant:hover,#ProjectCoordinator:hover,#RDSpecialist:hover,#TeachingAssistant:hover,#Bachelor:hover,#Master:hover,#Publication:hover
 {
 	transform: scale(1.02);
 }
