@@ -127,7 +127,7 @@
 	display: block;
 }
 
-#EducationalAssistant,#ProjectCoordinator,#RDSpecialist,#TeachingAssistant,#Bachelor,#Master,#Publication
+#EducationalAssistant,#ProjectCoordinator,#RDSpecialist,#TeachingAssistant,#Bachelor,#Master,#Publication,#HonorsElement
 {
 	transition-property: all;
     transition-duration: 400ms;
@@ -135,10 +135,11 @@
     transition-delay: 0s;
     user-select: none;
 }
-#EducationalAssistant:hover,#ProjectCoordinator:hover,#RDSpecialist:hover,#TeachingAssistant:hover,#Bachelor:hover,#Master:hover,#Publication:hover
+#EducationalAssistant:hover,#ProjectCoordinator:hover,#RDSpecialist:hover,#TeachingAssistant:hover,#Bachelor:hover,#Master:hover,#Publication:hover,#HonorsElement:hover
 {
 	transform: scale(1.02);
 }
+
 #StarContainers
 {
 	padding-bottom: 0.2rem;
