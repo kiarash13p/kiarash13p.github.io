@@ -1,0 +1,48 @@
+/* css styles */
+
+/* Center navbar items */
+.navbar-nav {
+  justify-content: center !important;
+  width: 100%;
+}
+
+.navbar-collapse {
+  justify-content: center;
+}
+
+/* Rounded yellow boxes for navbar buttons */
+.navbar .nav-link {
+  background: #102cb75d;           /* yellow */
+  color: #ffffff !important;         /* readable text */
+  border-radius: 999px;           /* fully rounded */
+  padding: 0.4rem 0.9rem;         /* inside spacing */
+  margin: 0.25rem 0.4rem;         /* gap between pills */
+  line-height: 1.2;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.06) inset;
+  transition: transform 120ms ease, background 120ms ease, box-shadow 120ms ease;
+}
+
+/* Hover/focus/active states */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  background: #9b1cc2;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.12);
+  transform: translateY(-1px);
+}
+
+.navbar .nav-link.active {
+  background: #102cb7;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+/* Ensure centering still works with pills */
+.navbar-nav {
+  justify-content: center !important;
+  width: 100%;
+}
+
+/* Optional: tweak for dark theme */
+[data-theme="dark"] .navbar .nav-link {
+  color: #111 !important;
+}
